@@ -1,3 +1,9 @@
+## [2.0.14](https://github.com/wessberg/scroll-behavior-polyfill/compare/v2.0.13...v2.0.14) (2020-07-03)
+
+### Bug Fixes
+
+- Safari's smooth scroll handler was erroneously firing scroll events. Ensure the scrolling has ended before attaching the scroll listener by using requestAnimationfRame instead of a timeout.
+
 ## [2.0.13](https://github.com/wessberg/scroll-behavior-polyfill/compare/v2.0.12...v2.0.13) (2019-10-16)
 
 ### Features
