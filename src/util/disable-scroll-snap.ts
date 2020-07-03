@@ -105,7 +105,7 @@ export function disableScrollSnap(scroller: ScrollSnappable): DisableScrollSnapR
 	}
 
 	function reset() {
-		setTimeout(() => {
+		requestAnimationFrame(() => {
 			if (hasReleased) return;
 			eventTarget.addEventListener("scroll", resetHandler);
 		});
